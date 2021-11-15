@@ -1,0 +1,9 @@
+import {toast} from "react-toastify" ;
+
+const notify = (text,type) => {
+    if (type === "success") {toast.success(text)}
+    else {toast.error(text)}
+};
+
+export default notify;
+// manageing the toast is easier than documation

@@ -1,0 +1,98 @@
+* {box-sizing: border-box;}
+/* ------------------   form   -------------- */
+.container{
+    background-color: silver;
+    width: 50%;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 3px 3px 50px 4px rgba(185,185,185,0.75);
+    padding: 0px 0px 5px 0px;
+}
+.boxer {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin:10px auto 0px auto;
+    width: 80%;
+    max-width: 350px;
+    padding-top: 15px;
+    margin-top: -15px;
+    
+}
+.boxer label{
+    align-self: flex-start;
+    margin: 0px 0px 5px 0px;
+}
+.boxer span{
+    
+    border: none;
+    align-self: flex-end;
+    color: rgba(255, 0, 0, 0.527);
+    margin: 5px 0px 0px opx;
+}
+/* ------------------  input   -------------- */
+.forminput {
+    width: 70%;
+    outline: none;
+    height: 30px;
+    border-radius: 7px 7px 7px 7px;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    align-self: center;
+    
+}
+.uncomplete {
+    width: 70%;
+    outline: none;
+    height: 30px;
+    border-radius: 7px 7px 7px 7px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    align-self: center;
+    box-shadow: 0px 3px 24px -5px rgba(255,0,0,0.44);
+}
+.forminput:focus , .uncomplete:focus {
+    width: 70%;
+    
+    outline: none;
+    height: 30px;
+    border-radius: 7px 7px 7px 7px;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    align-self: center;  
+}
+
+ /* ------------------   button   -------------- */
+.btn_container {margin: 10px 0px 100px 0px;}
+.btn {background-color: rgba(15, 173, 15, 0.849); color: honeydew; border: none; padding: 5px;
+cursor: pointer; margin: 5px;width: 50%;max-width: 200px;} 
+.btn:hover {background-color: green;}
+.a_btn{color: honeydew; text-decoration: none;}
+.a_btn:hover {color:bisque}
+@media (max-width:800px){
+    
+    .container {width: 80%;}
+    .boxer {
+        width: 90%;
+        display: flex;
+    }
+    .boxer label{
+        align-self: flex-start;
+        margin: 0px 0px 5px 0px;
+    }
+    
+}
+@media (max-width:440px){
+    
+    .container {width: 100%; background-color: rgb(255, 255, 255); box-shadow: none;}
+    .boxer {
+        width: 90%;
+        display: flex;
+    }
+    .boxer label{
+        align-self: flex-start;
+        margin: 0px 0px 5px 0px;
+    }
+    .a_btn{color: yellowgreen;}
+}
