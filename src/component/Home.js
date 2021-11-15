@@ -3,9 +3,11 @@ import {Link} from "react-router-dom"
 const Home = () => {
     return (
         <div>
-            ali
-            <Link to="/signup" >sign</Link>
-            <Link to="/login"  >log</Link>
+            <ul>
+                <li><Link to="/signup" >sign</Link></li>
+                <li><Link to="/login"  >log</Link></li>
+            </ul>
+            
         </div>
     );
 };
