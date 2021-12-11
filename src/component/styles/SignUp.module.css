@@ -7,18 +7,19 @@
     margin-top: 35px;
     border-radius: 7px 7px 7px 7px;
     box-shadow: 3px 3px 50px 4px rgba(185,185,185,0.75);
-    padding: 0px 0px 5px 0px;
+    padding: 10px 0px 5px 0px;
 }
+.title {
+    margin: 0px 0px 0px 25px;}
+.link{ margin-left: 5px;text-decoration: none; color: blue;}
 .boxer {
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
-    margin:10px auto 0px auto;
+    margin: 0px auto 5px auto;
     width: 80%;
     max-width: 350px;
-    padding-top: 15px;
-    margin-top: -15px;
-    
+    padding-top: 15px; 
 }
 .boxer label{
     align-self: flex-start;
@@ -64,7 +65,7 @@
 }
 
  /* ------------------   button   -------------- */
-.btn_container {margin: 10px 0px 100px 0px;}
+.btn_container {margin: 10px 0px 100px 25%;}
 .btn {background-color: rgba(15, 173, 15, 0.849); color: honeydew; border: none; padding: 5px;
 cursor: pointer; margin: 5px;width: 50%;max-width: 200px;} 
 .btn:hover {background-color: green;}

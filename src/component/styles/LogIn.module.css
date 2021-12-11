@@ -1,0 +1,68 @@
+.container{
+    background-color: silver;
+    width: 30%;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 3px 3px 50px 4px rgba(185,185,185,0.75);
+    padding: 10px 0px 5px 0px;
+}
+.boxer {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 15px auto 15px auto ;
+    width: 70%;
+    max-width: 350px;
+    height: 50px;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+   
+}
+.title {
+    margin: 0px 0px 0px 25px;}
+.link{ margin-left: 5px;text-decoration: none; color: blue;}
+.btn {
+    background-color: rgba(15, 173, 15, 0.849);
+    color: honeydew; border: none; padding: 5px;
+    cursor: pointer; 
+    margin-left: 25%;width: 25%;max-width: 200px;
+}
+
+@media (max-width:440px){
+    
+        .container {width: 100%; background-color: rgb(126, 125, 125); box-shadow: none;}
+        .boxer {
+            width: 90%;
+            display: flex;
+        }
+        .boxer label{
+            align-self: flex-start;
+            margin: 0px 0px 5px 0px;
+        }
+        .a_btn{color: yellowgreen;}
+}
+
+@media (max-width:800px){
+    
+        .container {max-width: 350px; width: 80%;}
+        .boxer {
+            width: 90%;
+            display: flex;
+        }
+        .boxer label{
+            align-self: flex-start;
+            margin: 0px 0px 5px 0px;
+        }
+        
+}
+
+@media  (min-width:801px) and (max-width:1200px)   {
+    .container{max-width: 750px; width: 50%;}
+
+    
+}

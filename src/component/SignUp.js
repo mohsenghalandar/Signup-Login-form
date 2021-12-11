@@ -42,8 +42,8 @@ const SignUp = () => {
             setTouch({name:true,email:true,pass:true,confirm_pass:true,isAccepte:true})}
     }
     return (
-        <div className={style.container}>
-            <h3>Sign Up</h3>
+        <form className={style.container}>
+            <h3 className={style.title}>Sign Up</h3>
           <form>
             <div className={style.boxer}> 
                 <label>Name</label>
@@ -74,11 +74,11 @@ const SignUp = () => {
             </div>
             <div className={style.btn_container}>
                 <button className={style.btn} type="submit" onClick={submit}>Sign up </button>
-                <Link to="/login">Log in</Link>
+                <Link className={style.link} to="/login">Log in</Link>
             </div>
           </form>
             <ToastContainer position="bottom-center" autoClose={false} newestOnTop={false} closeOnClick={false} rtl={false} pauseOnFocusLoss={false} draggable={false}/>
-        </div>
+        </form>
     );
 };
 
